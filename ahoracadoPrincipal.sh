@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "       __________"
+echo "       |         |"
+echo "       |         |"
+echo "       |         |"
+echo "                 |"
+echo "                 |"
+echo "                 |"
+echo "                 |"
+echo "                 |"
+echo "                 |"
+echo "                 |"
+echo "                 |"
+echo "_________________|"
