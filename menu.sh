@@ -10,8 +10,8 @@ echo "    \_____________________________________________________________________
 echo "                                                                                         "
 echo "-------------MENU D'OPCIONS:------------------"
 echo "Operació 1: JUGA EL AHORCADO AMB LA MAQUINA."
-echo "Operació 3: JUGA EL AHORCADO AMB UN ALTRE JUGADOR."
-echo "Operació 2: EIXIDA DEL PROGRAMA."
+echo "Operació 2: JUGA EL AHORCADO AMB UN ALTRE JUGADOR."
+echo "Operació 3: EIXIDA DEL PROGRAMA."
 echo "----------------------------------------------"
 echo -n "Introduiex una opció: "
 read opc
