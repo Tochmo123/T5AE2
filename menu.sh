@@ -8,24 +8,27 @@ echo "         /__/     \__\ |__|    |__|  |_________|  |_|   \_\  |_______| /__
 echo "    ______________________________________________________________________________________________________________ "
 echo "    \____________________________________________________________________________________________________________/ "
 echo "                                                                                         "
-echo "-------------MENU D'OPCIONS:------------------"
-echo "Operació 1: JUGA EL AHORCADO AMB LA MAQUINA."
-echo "Operació 2: JUGA EL AHORCADO AMB UN ALTRE JUGADOR."
-echo "Operació 3: EIXIDA DEL PROGRAMA."
-echo "----------------------------------------------"
-echo -n "Introduiex una opció: "
+echo "                                   ________________MENU DE OPCIONES_________________"
+echo "                                  |1: JUEGA AL AHORCADO CON LA MÁQUINA.             |"
+echo "                                  |2: JUEGA AL AHORCADO CON OTRO JUGADOR.           |      "
+echo "                                  |3: ESTADÍSTICAS.                                 |      "
+echo "                                  |4: SALIDA DEL PROGRAMA.                          |    "
+echo "                                  |_________________________________________________|"
+echo -n "                                  INTRODUCE UNA OPCIÓN(1..4): "
 read opc
-while [ $opc -ne 3 ]
+while [ $opc -ne 4 ]
 do
 case $opc in 
     1)
-        source solucion1.sh ;;
+        source s1.sh ;;
     2)
         source s2.sh ;;
+    3)  
+        source s3.sh;;
     *)
-        echo "Opció no valida." ;;
+        echo "OPCIÓN INCORRECTA." ;;
 esac
-echo -n "Introdueix altra opció: "
+echo -n "INTRODUCE OTRA OPCIÓN: "
 read opc
 done
-echo "Fin del programa."
+echo "FIN DEL PROGRAMA."
