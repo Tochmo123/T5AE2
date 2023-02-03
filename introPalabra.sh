@@ -42,6 +42,6 @@ echo "Esa letra no se encuentra en la palabra."
 intentos=$((intentos-1))
 fi
 done
-
+echo "Intentos agotados"
 
 
