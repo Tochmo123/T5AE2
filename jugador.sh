@@ -1,7 +1,152 @@
 #!/bin/bash
 
 # Lector de palabra letra por letra
+function cuerpo_0 () {
+echo "          ___________"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "_____________________|"
+}
 
+function cuerpo_1 () {
+echo "          ___________"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "       __/_\__       |"
+echo "        |*_*|        |"
+echo "         \ /         |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "_____________________|"
+}
+
+function cuerpo_2 () {
+echo "          ___________"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "       __/_\__       |"
+echo "        |*_*|        |"
+echo "         \ /         |"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "_____________________|"
+}
+
+function cuerpo_3 () {
+echo "          ___________"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "       __/_\__       |"
+echo "        |*_*|        |"
+echo "         \ /         |"
+echo "          |______    |"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "_____________________|"
+}
+
+function cuerpo_4 () {
+echo "          ___________"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "       __/_\__       |"
+echo "        |*_*|        |"
+echo "         \ /         |"
+echo "    ______|______    |"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "_____________________|"
+}
+
+function cuerpo_5 () {
+echo "          ___________"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "       __/_\__       |"
+echo "        |*_*|        |"
+echo "         \ /         |"
+echo "    ______|______    |"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "           \         |"
+echo "            \        |"
+echo "             \       |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "_____________________|"
+}
+
+function cuerpo_6 () {
+echo "          ___________"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "       __/_\__       |"
+echo "        |x_x|        |"
+echo "         \ /         |"
+echo "    ______|______    |"
+echo "          |          |"
+echo "          |          |"
+echo "          |          |"
+echo "         / \         |"
+echo "        /   \        |"
+echo "       /     \       |"
+echo "                     |"
+echo "                     |"
+echo "                     |"
+echo "_____________________|"
+}
 read -p "Introduce la palabra: " palabra
 palabra="$(echo -n "$palabra" | tr '[:lower:]' '[:upper:]')"
 palabraLetras=$(echo -n "$palabra" | wc -c )
@@ -9,7 +154,10 @@ letrasFalladas=""
 letrasFalladasCantidad=$(echo -n "$letrasFalladas" | wc -c )
 clear
 echo
-
+cuerpo_0
+echo
+echo
+echo
 palabra_escondida=$(echo $palabra | sed 's/./_/g')
 echo $palabra_escondida
 intentos=6
@@ -27,14 +175,28 @@ while [[ $palabra_escondida != $palabra ]] && [[ $intentos -gt 0 ]]; do
         done
     else
         intentos=$((intentos-1))
-        echo "Letra incorrecta. Te quedan $intentos intentos."
-        letrasFalladas+=$letra
-        letrasFalladasCantidad=$(echo -n "$letrasFalladas" | wc -c )
-        echo "Las letras que no se encuentran en la palabra son las siguientes:"
-        for i in `seq 0 $((letrasFalladasCantidad-1))`; do
-        letraFallada="${letrasFalladas:$i:1}"
-        echo -n $letraFallada
-        done
+        if [[ $intentos == 0 ]]; then
+        cuerpo_6
+         elif [[ $intentos == 1 ]]; then
+         cuerpo_5
+         elif [[ $intentos == 2 ]]; then
+         cuerpo_4
+         elif [[ $intentos == 3 ]]; then
+         cuerpo_3
+         elif [[ $intentos == 4 ]]; then
+         cuerpo_2
+         elif [[ $intentos == 5 ]]; then
+         cuerpo_1
+         fi
+
+    echo "Letra incorrecta. Te quedan $intentos intentos."
+    letrasFalladas+=$letra
+    letrasFalladasCantidad=$(echo -n "$letrasFalladas" | wc -c )
+    echo "Las letras que no se encuentran en la palabra son las siguientes:"
+    for i in `seq 0 $((letrasFalladasCantidad-1))`; do
+    letraFallada="${letrasFalladas:$i:1}"
+    echo -n $letraFallada
+    done
     fi
     echo
     echo $palabra_escondida
