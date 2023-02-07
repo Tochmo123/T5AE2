@@ -147,9 +147,6 @@ echo "                     |"
 echo "                     |"
 echo "_____________________|"
 }
-cuerpo_0
-echo
-echo
 read -p "Introduce la palabra: " palabra
 palabra="$(echo -n "$palabra" | tr '[:lower:]' '[:upper:]')"
 palabraLetras=$(echo -n "$palabra" | wc -c )
@@ -157,7 +154,10 @@ letrasFalladas=""
 letrasFalladasCantidad=$(echo -n "$letrasFalladas" | wc -c )
 clear
 echo
-
+cuerpo_0
+echo
+echo
+echo
 palabra_escondida=$(echo $palabra | sed 's/./_/g')
 echo $palabra_escondida
 intentos=6
