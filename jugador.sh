@@ -216,7 +216,8 @@ echo "  |  _ \ | ____||  _ \ |  _ \  / _ \ |_   _|   / \    "
 echo "  | | | ||  _|  | |_) || |_) || | | |  | |    / _ \   "
 echo "  | |_| || |___ |  _ < |  _ < | |_| |  | |   / ___ \  "
 echo "  |____/ |_____||_| \_\|_| \_\ \___/   |_|  /_/   \_\ "
+echo
+echo "La palabra era: $palabra"
 echo -e "Palabra fallada:$palabra" >> registro.txt
 sleep 3
 fi
-

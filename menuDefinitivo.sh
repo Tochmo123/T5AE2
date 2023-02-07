@@ -32,6 +32,7 @@ case $opc in
         source jugador.sh ;;
     3)  
         cat registro.txt ;;
+        sleep 5
     *)
         echo "OPCIÓN INCORRECTA." ;;
 esac
