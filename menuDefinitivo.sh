@@ -20,11 +20,11 @@ while [ $opc -ne 4 ]
 do
 case $opc in 
     1)
-        source s1.sh ;;
+        source maquina.sh ;;
     2)
-        source s2.sh ;;
+        source jugador.sh ;;
     3)  
-        source s3.sh;;
+        cat registro.txt ;;
     *)
         echo "OPCIÓN INCORRECTA." ;;
 esac
