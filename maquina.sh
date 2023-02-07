@@ -5,7 +5,6 @@
 function generaPalabra() {
     num=$(($RANDOM % 10 + 1))
     palabra=$(sed -n "$num"p palabras.txt)
-    echo $palabra
 }
 generaPalabra
 palabra="$(echo -n "$palabra" | tr '[:lower:]' '[:upper:]')"
