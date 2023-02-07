@@ -216,13 +216,8 @@ echo "  |  _ \ | ____||  _ \ |  _ \  / _ \ |_   _|   / \    "
 echo "  | | | ||  _|  | |_) || |_) || | | |  | |    / _ \   "
 echo "  | |_| || |___ |  _ < |  _ < | |_| |  | |   / ___ \  "
 echo "  |____/ |_____||_| \_\|_| \_\ \___/   |_|  /_/   \_\ "
-<<<<<<< HEAD
 echo
 echo "La palabra era: $palabra"
-fi
-=======
 echo -e "Palabra fallada:$palabra" >> registro.txt
 sleep 3
 fi
-
->>>>>>> refs/remotes/origin/dev
