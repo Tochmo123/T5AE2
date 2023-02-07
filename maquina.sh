@@ -222,5 +222,7 @@ echo "  | | | ||  _|  | |_) || |_) || | | |  | |    / _ \   "
 echo "  | |_| || |___ |  _ < |  _ < | |_| |  | |   / ___ \  "
 echo "  |____/ |_____||_| \_\|_| \_\ \___/   |_|  /_/   \_\ "
 echo -e "Palabra fallada:$palabra" >> registro.txt
+echo
+echo "La palabra era $palabra"
 sleep 3
 fi
