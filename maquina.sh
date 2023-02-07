@@ -214,10 +214,13 @@ echo "  | |  _    / _ \   |  \| |   / _ \   \___ \   | |   |  _|   "
 echo "  | |_| |  / ___ \  | |\  |  / ___ \   ___) |  | |   | |___  "
 echo "   \____| /_/   \_\ |_| \_| /_/   \_\ |____/   |_|   |_____| "
 echo -e "Palabra usada:$palabra \nIntentos sobrantes:$intentos " >> registro.txt
+sleep 3
 else 
 echo "   ____   _____  ____   ____    ___   _____     _     "
 echo "  |  _ \ | ____||  _ \ |  _ \  / _ \ |_   _|   / \    "
 echo "  | | | ||  _|  | |_) || |_) || | | |  | |    / _ \   "
 echo "  | |_| || |___ |  _ < |  _ < | |_| |  | |   / ___ \  "
 echo "  |____/ |_____||_| \_\|_| \_\ \___/   |_|  /_/   \_\ "
+echo -e "Palabra fallada:$palabra" >> registro.txt
+sleep 3
 fi
