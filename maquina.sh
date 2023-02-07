@@ -3,7 +3,7 @@
 # Lector de palabra letra por letra
 
 function generaPalabra() {
-    num=$(($RANDOM % 10 + 1))
+    num=$(($RANDOM % 817 + 1))
     palabra=$(sed -n "$num"p palabras.txt)
 }
 function cuerpo_0 () {
