@@ -1,4 +1,4 @@
-teléfono
+telefono
 helicóptero
 fresa
 hipotenusa
@@ -7,11 +7,10 @@ ciervo
 animar
 jirafa
 Sierra
-té
-coagulación
-Código Postal
+te
+coagulacion
 exceso
-Júpiter
+Jupiter
 Saturno
 Venus
 tierra
@@ -40,11 +39,11 @@ tristeza
 pintoresco
 codorniz
 pluma
-ridículo
+ridiculo
 cerdito
 maricón
 casas
-gángster
+gangster
 bellota
 unario
 iluminado
@@ -56,9 +55,6 @@ hermano
 Tortuga
 club
 obtener
-con
-tú
-sexo
 tums
 intento
 genio
@@ -67,23 +63,20 @@ nubes
 seta
 nuclear
 bomba
-bambú
+bambu
 Detroit
-dandylion
 polo
 cubo
 Polonia
-Canadá
+Canada
 granero
 diente
 viga
 entrenar
 apoyo
 alcohol
-alcohólico
-cocaína
-jamón
-resbalón
+alcoholico
+jamon
 labio
 feliz
 triste
@@ -109,3 +102,4 @@ retorcido
 central
 baloncesto
 primario
+esternocleidomastoideo
